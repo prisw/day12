@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Your list of <span data-th-text="${noOfGenerateNo}"></span> random numbers</h1>
+
+    <u1 data-th-each="v : ${selectedImgs}">
+        <img data-th-src="@{${'/images/' + v}}" height="200" width="200"/>
+    </u1>
+</body>
+</html>
